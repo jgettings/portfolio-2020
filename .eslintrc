@@ -1,0 +1,26 @@
+{
+    "extends": [
+      "airbnb",
+      "plugin:jest/recommended"
+    ],
+    "parser": "babel-eslint",
+    "plugins": [
+      "react-hooks",
+      "material-ui",
+      "jest"
+    ],
+    "env": {
+      "browser": true,
+      "jest/globals": true
+    },
+    "rules": {
+      "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+    },
+    "settings": {
+      "import/resolver": {
+        "webpack": {
+          "config": "webpack.dev.js"
+        }
+      }
+    }
+}
