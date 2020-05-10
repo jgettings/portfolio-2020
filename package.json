@@ -4,10 +4,17 @@
   "description": "jengettings.com",
   "main": "src/index.js",
   "license": "MIT",
+  "author": "Jen Gettings",
+  "homepage": "https://jen-gettings.herokuapp.com/",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgettings/portfolio.git"
+  },
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack -p --config webpack.prod.js",
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "start": "node server.js",
+    "heroku-postbuild": "webpack -p --config webpack.prod.js",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "cover": "jest --coverage"

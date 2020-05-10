@@ -24,7 +24,7 @@ const TopBar = () => {
   return (
     <AppBar position="sticky" role="banner" color="transparent">
       <Toolbar>
-        <Avatar alt="Jen Gettings" src={gravatar()} className={classes.menuButton} />
+        <Avatar alt="" src={gravatar()} className={classes.menuButton} />
         <Typography variant="h2" component="h1" className={classes.title} color="primary">
           Jen Gettings
         </Typography>
