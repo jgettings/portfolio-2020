@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import IconButton from '@material-ui/core/IconButton';
-import DarkThemeIcon from '@material-ui/icons/NightsStay';
-import LightThemeIcon from '@material-ui/icons/WbSunny';
+import { FaCloudMoon as DarkThemeIcon, FaCloudSun as LightThemeIcon } from 'react-icons/fa';
+import Tooltip from '@material-ui/core/Tooltip';
 import defaultThemeCheck from './defaultThemeCheck';
 import modes from './modes';
 
@@ -12,16 +12,18 @@ const ThemeToggle = ({ themePreference, toggleDarkTheme }) => {
   const themeMode = defaultThemeCheck(themePreference);
   const Icon = themeMode === modes.dark ? DarkThemeIcon : LightThemeIcon;
 
+  const title = `Switch to ${modes.opposite(themeMode)} theme`;
+
   return (
-    <div>
+    <Tooltip title={title}>
       <IconButton
-        aria-label={`Switch to ${modes.opposite(themeMode)} theme`}
+        aria-label={title}
         onClick={toggleDarkTheme}
         color="primary"
       >
         <Icon />
       </IconButton>
-    </div>
+    </Tooltip>
   );
 };
 
