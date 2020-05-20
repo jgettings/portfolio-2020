@@ -39,6 +39,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      favicon: './src/favicon.ico',
     }),
   ],
   output: {
@@ -48,8 +49,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.jsx', '.js'],
-    alias: {
-      'react-dom': '@hot-loader/react-dom',
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'initial',
     },
   },
 };

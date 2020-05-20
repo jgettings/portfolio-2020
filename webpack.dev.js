@@ -12,4 +12,9 @@ module.exports = merge(common, {
     useLocalIp: true,
     hot: true,
   },
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom',
+    },
+  },
 });
