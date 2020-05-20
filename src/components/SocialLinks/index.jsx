@@ -10,7 +10,7 @@ const SocialLinks = () => (
     <SocialLink title="My Github Profile" href="https://github.com/jgettings">
       <FaGithub />
     </SocialLink>
-    <SocialLink title="My Linkedin Profile" href="www.linkedin.com/in/jennifer-gettings-17b2a921">
+    <SocialLink title="My Linkedin Profile" href="https://www.linkedin.com/in/jennifer-gettings-17b2a921">
       <FaLinkedin />
     </SocialLink>
     <SocialLink title="My Stack Overflow Developer Story" href="https://stackoverflow.com/users/story/3062799">
