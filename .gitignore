@@ -23,3 +23,5 @@ create-react-app-README.md
 config.json
 old/
 dist/
+team-extension.log
+.vscode/launch.json
