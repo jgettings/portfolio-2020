@@ -4,7 +4,6 @@ import AppBar from '@material-ui/core/AppBar';
 import WiderTopBar from './WiderTopBar';
 import NarrowerTopBar from './NarrowerTopBar';
 
-
 const TopBar = () => {
   const wideScreen = useMediaQuery('(min-width:725px)');
 

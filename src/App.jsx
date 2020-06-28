@@ -6,7 +6,6 @@ import ThemedApp from './theme/ThemedApp';
 import AppBar from './components/AppBar';
 import Home from './components/Home';
 
-
 const App = () => (
   <Provider store={configureStore()}>
     <ThemedApp>

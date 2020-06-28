@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-
 const WiderTopBar = () => {
   const classes = useStyles();
 

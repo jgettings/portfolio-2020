@@ -7,7 +7,6 @@ import Tooltip from '@material-ui/core/Tooltip';
 import defaultThemeCheck from './defaultThemeCheck';
 import modes from './modes';
 
-
 const ThemeToggle = ({ themePreference, toggleDarkTheme }) => {
   const themeMode = defaultThemeCheck(themePreference);
   const Icon = themeMode === modes.dark ? DarkThemeIcon : LightThemeIcon;
@@ -27,12 +26,10 @@ const ThemeToggle = ({ themePreference, toggleDarkTheme }) => {
   );
 };
 
-
 ThemeToggle.propTypes = {
   themePreference: PropTypes.string.isRequired,
   toggleDarkTheme: PropTypes.func.isRequired,
 };
-
 
 const mapStateToProps = (state) => ({
   themePreference: state.theme.mode,
