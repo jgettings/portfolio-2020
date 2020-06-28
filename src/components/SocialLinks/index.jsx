@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  FaStackOverflow, FaLinkedin, FaGithub, FaInstagram, FaRss,
+  FaStackOverflow, FaLinkedin, FaGithub, FaInstagram, FaRss, FaCodepen,
 } from 'react-icons/fa';
 import SocialLink from './SocialLink';
 import PluralsightIcon from './pluralsightIcon';
@@ -15,6 +15,9 @@ const SocialLinks = () => (
     </SocialLink>
     <SocialLink title="My Stack Overflow Developer Story" href="https://stackoverflow.com/users/story/3062799">
       <FaStackOverflow />
+    </SocialLink>
+    <SocialLink title="My Codepens" href="https://codepen.io/jengettings">
+      <FaCodepen />
     </SocialLink>
     <SocialLink title="My Pluralsight Profile" href="https://app.pluralsight.com/profile/jen-gettings">
       <PluralsightIcon />
