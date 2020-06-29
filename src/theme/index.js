@@ -32,6 +32,13 @@ const theme = (mode) => createMuiTheme({
       fontFamily: decorativeFont,
     },
   },
+  overrides: {
+    MuiTooltip: {
+      tooltip: {
+        fontSize: '1em',
+      },
+    },
+  },
 });
 
 export default (mode) => responsiveFontSizes(theme(mode));
